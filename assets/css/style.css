@@ -1,70 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Pacifico&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Libre+Baskerville&family=Pacifico&family=Roboto:wght@300&display=swap');
-* { margin: 0;
-padding: 0;
-border:0;
+
+* {
+    box-sizing: border-box;
+
 }
 
-body { 
-    font-family: Lato, Roboto, sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
     font-weight: 300px;
-    color: #3a3a3a; 
-    position: relative;
+    color: #3a3a3a;
 }
-    
 
-.header {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(11, 119, 119, 0.583);
     background-color: #fff;
-    position: relative;
-    height: 100px;
-}
-#header-text {
-   height: 85px;
-   color: #fff;
-   background-color: rgba(238, 223, 13, 0.959);
-}
-#header-text h1, h2 {
-    margin-left: 240px;
-    font-weight: 800;
+
 }
 
-#logo {
-       height: 180px;
-       width: 200px;
-        float: left;
-        margin-top: 2px;
-       
-        margin-left: 30px;
-        position: absolute;
-        border-radius: 50%;
-    }
-    
-    #menu, #logo {
-        line-height: 80px;
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgba(51, 172, 172, 0.583);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: rgba(189, 233, 233, 0.583);
+    ;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgba(51, 172, 172, 0.583);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .toggle-button {
+        display: flex;
     }
 
-    #menu li {
-        float: right;
-        list-style-type: none;
-        margin-right: 50px;
-        color: #fff;
+    .navbar-links {
+        display: none;
+        width: 100%;
     }
 
-    #menu a {
-        font-family: Arial, sans-serif;
-        text-decoration: none;
-        color: rgba(101, 172, 130, 0.973);
-        font-weight: bold;
-        font-size: large;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-star;
     }
-    
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
     }
-    
-    .active {
-        border-bottom: 1px solid #3a3a3a;
+
+    .navbar-links li {
+        text-align: center;
     }
-    hr {
-        border: 1px solid inherit;
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
     }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+h1,
+h2 {
+    margin: 0 auto;
+}
+
+
+
+#header-images {
+    height: 800px;
+    margin: 4px 4px 4px 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+#header-images img {
+    display: flexbox;
+    height: 200px;
+    width: 24%;
+    display: inline-block;
+}
+
+
+.div-about-us {
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.about-us {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+.sub-about-us {
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    height: 300px;
+    margin: 4px 4px 4px 4px;
+    border-radius: 4px;
+
+}
+
+.sub-location,
+.sub-story,
+h2 {
+    text-align: center;
+    border: 1px solid black;
+    width: 50%;
+    margin: 2px;
+
+}
