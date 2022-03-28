@@ -24,8 +24,8 @@ body {
 
 }
 
-.brand-title {
-    font-size: 1.5rem;
+.brand-title img{
+    height: 160px;
     margin: .5rem
 }
 
@@ -102,18 +102,32 @@ body {
     }
 }
 
-
-
-h1,
+.header-text
 h2 {
-    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+    display: block;
+    width: 100%;
 }
 
+.header-text
+p {
+    text-align: center;
+    border: 1px solid black;
+    margin: 2px;
+    display: block;
+    width: 100%; 
+} 
 
+.header-text {
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+}
 
 #header-images {
     height: 450px;
-    margin: 4px 4px 4px 10px;
+    margin: 4px 4px 10px 10px;
     border-radius: 20px;
     border: 1px solid black;
 }
@@ -121,9 +135,10 @@ h2 {
 #header-images img {
     display: flexbox;
     height: 200px;
-    width: 24%;
+    width: 24.4%;
     border-radius: 20px;
     display: inline-block;
+    
 }
 
 
