@@ -112,9 +112,9 @@ h2 {
 
 
 #header-images {
-    height: 800px;
+    height: 450px;
     margin: 4px 4px 4px 10px;
-    border-radius: 4px;
+    border-radius: 20px;
     border: 1px solid black;
 }
 
@@ -122,6 +122,7 @@ h2 {
     display: flexbox;
     height: 200px;
     width: 24%;
+    border-radius: 20px;
     display: inline-block;
 }
 
